@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #17293E;
   color: white;
+  padding: 0.75rem 1.25rem;
 }
 
-.App-link {
-  color: #61dafb;
+.App-body {
+  display: flex;
+  flex-direction: row;
+  height: 93vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.left-col {
+  width: 30%;
+  background: #171D24;
+  padding: 0px 20px;
+}
+
+.input-search {
+  background: #222B35;
+  height: 2rem;
+  width: 20rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  color: #FFFFFF
+}
+
+.input-search::-webkit-input-placeholder{
+  color: #424F5F
+}
+
+.middle-col {
+  width: 50%;
+  background: #C4C4C4;
+  height: 100%;
+}
+
+.right-col {
+  width: 20%;
+  background: #171D24;
+  padding: 0px 15px;
+}
+
+.tree-selected-node {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.tree-selected-depth {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.editor-box {
+  padding: 25px;
+  line-height: 2rem;
+  height: calc(100% - 90px);;
+}
+
+.editor-box-element {
+  width: 100%;
+  height: 100%;
+}
+
+textarea {
+  width: -webkit-fill-available;
+  height: 100%;
+}
+
+.editor-box-label {
+  color: #000000;
+  font-weight: 700;
+  font-size: 14px;
 }
